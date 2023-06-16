@@ -49,7 +49,9 @@ if len(pw) == 8:
                 D = 'สมุดโน็ต'
             sum = sum + (n * price)
             print(f'X{n}', D,n*price, 'THB')
-    print('ราคารวมทั้งหมด',sum)
+        else:
+            print('ราคารวมทั้งหมด', sum)
+    else:
+        print('ราคารวมทั้งหมด',sum)
 else:
     print('กรอกpasswordผิดแล่วไอโง่')
-
