@@ -1,15 +1,16 @@
 from tkinter import *
+import math
 def left_at_button(event):
     height = float(textbox1.get())
     weight = float(textbox2.get())
     BMI = weight/(height**2)
     if BMI <18.5:
         x = 'ผอมเกินไป'
-    elif BMI <23.0:
+    elif math.floor(BMI) <23.0:
         x = 'น้ำหนักปกติ'
-    elif BMI < 25.0:
+    elif math.floor(BMI) < 25.0:
         x = 'น้ำหนักเกิน'
-    elif BMI < 30.0:
+    elif math.floor(BMI) < 30.0:
         x = 'อ้วน'
     else:
         x = 'อ้วนมาก'
